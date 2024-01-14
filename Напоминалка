@@ -1,0 +1,24 @@
+Certainly, here is the Python code using the `plyer` library for reminders:
+
+```python
+from plyer import notification
+import time
+
+def remind_me(message, interval_minutes):
+while True:
+notification.notify(
+title='Reminder',
+message=message,
+timeout=10
+)
+time.sleep(interval_minutes * 60)
+
+# Example usage:
+remind_me('Check your tasks!', 30)
+```
+
+This code creates an infinite loop, sending you a notification every 30 minutes. You can customize the message and interval as per your preferences.
+
+Remember to install the `plyer` library using `pip install plyer` before running the script.
+Файл не выбран
+Ещё
